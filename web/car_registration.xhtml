@@ -8,15 +8,24 @@
     <h:body class="w3-light-grey">    
         <ui:composition template="BaseTemplate.xhtml">
             <ui:define name="body">
-                    
+                 
                 <div class="w3-content w3-justify w3-text-black"
                      id="about">
                     <h2 class="w3-text-black">
                         Car Registration
                     </h2>
-                    <hr style="width:200px" class="w3-opacity">
+                    <hr class="w3-opacity">
                     </hr>
-            
+                    <div class="row">
+                    <img 
+                       style="
+                       float: left;
+                       padding: 10px;
+                       width:300px;
+                       text-align: center;
+                       " src="images/1.jpg"/>
+                    </div>
+                    
                     <h:form>
                         <p>
                             <label class="w3-blue w3-padding">
@@ -133,7 +142,7 @@
                                          value="#{registrationForm.password}"
                                          requiredMessage="Enter Password"
                                          validatorMessage="Password must be minimum 5 characters long" 
-                                         validator="#{registrationForm.validateFinalPassword}"
+                                         validator="#{registrationForm.validateFinalPass}"
                                          >
                                 <f:validateLength minimum="5"/>
                             </h:inputSecret>

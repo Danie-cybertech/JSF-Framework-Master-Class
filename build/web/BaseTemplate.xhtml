@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
@@ -38,26 +40,34 @@
         <div class="w3-bar w3-light-grey w3-xlarge 
              w3-border-bottom">
             <div class="w3-bar-item w3-left w3-border-right">
-                <img height="25px" src="./images/logo.jpg"/>
+                <img class="w3-border" height="45px" src="./images/trans.png"/>
                 <b>TRANS-CORP</b>
+            </div>
+            <div class="w3-bar-item w3-right w3-hover-red
+                 w3-border-left">
+                <img src="./images/contactus.jpg" width="55px" alt="alt"/>
             </div>
 
             <div class="w3-bar-item w3-right w3-hover-red
                  w3-border-left">
-                <b>LOGIN</b>
+                <img src="./images/niit.png" width="85px" alt="alt"/>
             </div>
         </div>
         
         <div class="container-fluid w3-left" style="width:30%">
-            <h:form>                
+            <h:form>     
+                <h2>
+                    
                 <h:commandLink 
                     class="w3-margin-top w3-light-gray w3-btn 
                     w3-hover-black w3-hover-text-white
                     w3-bar w3-margin-bottom w3-border"
                     style="font-weight:bold; font-size: 20px"
                     action="index"
-                    value="HOME">
-                </h:commandLink>
+                    value="HOME"/>
+                    
+                
+                
                 <h:commandLink 
                     class="w3-light-gray w3-btn 
                     w3-hover-black w3-hover-text-white
@@ -80,8 +90,8 @@
                     w3-bar w3-margin-bottom w3-border"
                     style="font-weight:bold; font-size: 20px"
                     action="car_registration"
-                    value="REGISTER YOUR CAR">
-                </h:commandLink>
+                    value="REGISTER YOUR CAR"/>
+                
                 <h:commandLink 
                     class="w3-light-gray w3-btn 
                     w3-hover-black w3-hover-text-white
@@ -98,13 +108,13 @@
                     action="faq"
                     value="FAQ">
                 </h:commandLink>
-                
+                </h2>
             </h:form>
         </div>
         
         <div class="container-fluid w3-left w3-light-grey"
              style="
-             height: 1000px;
+             height: 1200px;
              width: 69%;
              margin-top: 15px;
              opacity: 80%;

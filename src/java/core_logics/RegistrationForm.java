@@ -99,8 +99,8 @@ public class RegistrationForm {
         return finalPassword;
     }
 
-    public void setFinalPassword(String finalPassword) {
-        this.finalPassword = finalPassword;
+    public void setFinalPassword(String password) {
+        this.finalPassword = password;
     }
 
     
@@ -123,7 +123,7 @@ public class RegistrationForm {
                     + "special characters"));
     } 
 
-    public void validateFinalPassword(FacesContext fc, UIComponent c, Object value)throws ValidatorException
+    public void validateFinalPass(FacesContext fc, UIComponent c, Object value)throws ValidatorException
     {
         setFinalPassword((String) value);
     }
